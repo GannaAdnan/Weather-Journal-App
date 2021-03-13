@@ -1,0 +1,184 @@
+body{
+    margin: 8px;
+    background: #fffff8;
+    font-family: 'Raleway';
+}
+
+#app{
+
+    display: grid;
+grid-auto-rows:minmax(150px,auto) ;  
+  /* grid-template-columns:  */
+    height:100vh;
+    background-image: url("weather/1920x1080-2637951-horizon-zero-dawn-4k-free-wallpaper-in-hd.jpg");
+    background-repeat: no-repeat;
+    color: #ffffff;
+    justify-content:center ;
+    grid-gap: 1em;
+    font-size: 20px;
+    font-family: 'Raleway';}
+.row{
+
+    display: -webkit-flex;
+}
+.holder{
+    display: grid;
+    grid-auto-columns:minmax(150px,auto) ;  
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 20px;
+}
+
+
+
+#entryHolder{
+
+    height: 320px;
+    width: 320px;
+    align-items: center;
+    text-align: center;
+}
+.details{
+    text-align: center;
+    font-size: 24px;
+    width: 100%;
+    background-color:#fffff856  ;
+}
+.feel{
+    align-items: center;
+    font-family: 'Raleway';  
+     
+
+}
+#x{visibility: hidden;}
+#xx{visibility: hidden;
+    font-size: 36px;
+
+}
+
+#temp{
+
+    color: #ffffff;
+    font-size: 145px;
+    font-family: "Raleway";
+
+}
+#date{
+    font-size: 26px;
+    color: #f6f0f0;
+    display: flex;
+
+}
+#timezone{    font-size: 26px;
+    display: flex;
+
+}
+
+#country{
+    display: flex;
+    font-size: 26px;
+    font-weight: bolder;
+    padding-left:30px ;
+    padding-right:10px ;
+
+    float: left;
+}
+#weatherdesc{
+    font-size: 28px;
+    text-transform: capitalize;
+    font-weight: bold;
+    text-align: center;
+}
+#templike{    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+
+}
+#content{
+
+    color: #f6f0f0;
+}
+
+.headline {
+    padding: 20px;
+    text-align: left;
+    font-size: 25px;
+}
+.title{
+
+    font-size: 27px;
+    color: #f6f0f0;
+}
+.footer{
+
+    padding: 30px;
+    text-align: center;
+}
+
+/*  Basic Styling To Override Default For Basic HTML Elements */
+label{
+    font-weight: bold;
+    display:block;
+}
+input{
+    
+    height: 45px;
+    width: 70%;
+    background: rgba(224, 255, 255, 0.068);
+    color: white;
+    font-size: 18px;
+    border: none;
+    text-align:center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.26), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+input[type=text]{
+    color: white;
+    font-size: 18px;
+    font-family: 'Raleway';
+}
+
+button{
+    width: 12%;
+    height: 43px;
+    background: rgba(224, 255, 255, 0.021);
+    color: #ffffff;
+    font-size: 18px;
+    border: none;
+    align-self:flex-start;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.26), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-family: 'Raleway';}
+button:hover{
+    color:#1d2c33cc;
+    background-color:rgba(211, 211, 211, 0.253);
+
+
+}
+
+h1{
+    font-size: 36px;
+}
+#search{
+    padding-left: 30px ;
+}
+/* Reset style for HTML element on active to have no border*/
+input:hover
+ {
+    background:#f1f1f148;
+}
+/* Style for Placeholder Text*/
+::placeholder { /* Firefox, Chrome, Opera */ 
+    color: #f6f0f0;
+    font-family: 'Raleway';
+} 
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
+    color: #f6f0f0;
+    font-family: 'Raleway';
+} 
+  
+::-ms-input-placeholder { /* Microsoft Edge */ 
+    color: #f6f0f0;
+    font-family: 'Raleway';
+} 
